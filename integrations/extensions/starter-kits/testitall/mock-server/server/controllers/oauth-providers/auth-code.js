@@ -102,8 +102,8 @@ export function oauth2ProviderAuthCodeToken(req, res, next) {
     const accessToken = issueAccessToken()
     const refreshToken = issueRefreshToken()
 
-    // Delete the auth_code
-    authCodes.delete(req.body.code);
+    // // Delete the auth_code
+    // authCodes.delete(req.body.code);
     console.log('[auth code] one-time auth code used:', req.body.code);
 
     // Return the access_token and refresh_token
